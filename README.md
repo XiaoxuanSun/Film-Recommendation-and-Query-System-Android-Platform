@@ -1,5 +1,5 @@
 # This is the source code of the program: 
-# Movies & TV Shows Recommendation and Query System (Web Platform)
+# Movies & TV Shows Recommendation and Query System (Android Mobile Platform)
 
 Related techs: Java, XML, JSON, Android 10, Node.JS, GAE;
 
