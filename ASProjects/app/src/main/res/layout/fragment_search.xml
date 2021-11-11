@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Toolbar"
+        android:background="@color/appBackground">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/SearchMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animationCache="true"
+            app:queryHint="Search movies and TV"
+            app:searchIcon="@drawable/ic_baseline_search_24"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:id="@+id/SearchResTextv"
+        android:gravity="center"
+        android:text="No result found."
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/SearchMovieRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
